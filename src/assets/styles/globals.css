@@ -3,7 +3,7 @@
   color-scheme: light;
 
   /* 头部高度 */
-  --g-header-height: 60px;
+  --g-header-height: 80px;
 
   /* 侧边栏宽度 */
   --g-main-sidebar-width: 80px;
@@ -27,6 +27,75 @@
 
     --scrollbar-color: 240 3.7% 15.9%;
   }
+}
+
+/* 自定义字体定义 */
+/* Roboto Slab 字体 */
+@font-face {
+  font-family: 'Roboto Slab';
+  src: url('@/assets/fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 台湾教育部标准楷书 */
+@font-face {
+  font-family: '台湾教育部标准楷书';
+  src: url('@/assets/fonts/台湾教育部标准楷书.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 崇羲篆体 */
+@font-face {
+  font-family: '崇羲篆体';
+  src: url('@/assets/fonts/崇羲篆体.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 文鼎PL简中楷 */
+@font-face {
+  font-family: '文鼎PL简中楷';
+  src: url('@/assets/fonts/文鼎PL简中楷.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 方正楷体-大陆繁体 */
+@font-face {
+  font-family: '方正楷体-大陆繁体';
+  src: url('@/assets/fonts/方正楷体-大陆繁体.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 方正楷体-简体 */
+@font-face {
+  font-family: '方正楷体-简体';
+  src: url('@/assets/fonts/方正楷体-简体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 方正书宋-简体 */
+@font-face {
+  font-family: '方正书宋-简体';
+  src: url('@/assets/fonts/方正书宋-简体.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 设置默认字体 */
+body {
+  font-family: 'Roboto Slab', '方正书宋-简体', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* 明暗模式 CSS 变量 */
@@ -77,4 +146,29 @@ body {
 /* textarea 字体跟随系统 */
 textarea {
   font-family: inherit;
+}
+
+/* 字体工具类 */
+.font-roboto {
+  font-family: 'Roboto Slab', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-taikai {
+  font-family: '台湾教育部标准楷书', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-zhuan {
+  font-family: '崇羲篆体', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-wd-kai {
+  font-family: '文鼎PL简中楷', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-fz-fankai {
+  font-family: '方正楷体-大陆繁体', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.font-fz-jiankai {
+  font-family: '方正楷体-简体', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
